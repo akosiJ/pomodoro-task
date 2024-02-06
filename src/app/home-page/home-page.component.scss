@@ -1,0 +1,26 @@
+.container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    background: linear-gradient(36deg, rgb(59, 193, 226), #38d68c);
+}
+
+.middle-container {
+    background-color: #eee9;
+    border-radius: 10px;
+    width: 480px;
+}
+
+.text-align-center {
+    text-align: center;
+};
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-right {
+    text-align: right;
+}
