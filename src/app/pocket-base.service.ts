@@ -1,19 +1,17 @@
-import { Injectable } from '@angular/core';
-import PocketBase from 'pocketbase';
+import { Injectable } from '@angular/core'
+import PocketBase from 'pocketbase'
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class PocketBaseService {
-  constructor(
-  ){
-    this.pb = new PocketBase('http://127.0.0.1:8090'); 
+  constructor() {
+    this.pb = new PocketBase('http://127.0.0.1:8090')
   }
   pb
-  async viewTest (){
+  async viewTest() {
     return await this.pb.collection('users').getOne('RECORD_ID', {
       expand: 'relField1,relField2.subRelField',
-    });
+    })
   }
-
 }
