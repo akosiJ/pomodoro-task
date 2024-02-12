@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { ClockWidgetComponent } from '../clock-widget/clock-widget.component';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [],
+  imports: [ClockWidgetComponent],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss'
 })
